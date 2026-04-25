@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOKAN SPICES - Authentic Indian Spices & Papad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🌶️ KOKAN SPICES</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Kokani Spices & Homemade Papad</h1>
+            <p>Pure, natural, and full of flavor. Direct from Alibag to your kitchen.</p>
+            <a href="#products" class="btn-primary">Shop Now</a>
+            <a href="https://wa.me/919699726506" class="btn-whatsapp">📱 Order on WhatsApp</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            
+            <div class="category">
+                <h3>🌶️ Whole Spices</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🌶️</div>
+                        <h4>Bedgi Mirchi Powder</h4>
+                        <p class="price">₹80 - ₹400</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Bedgi Mirchi Powder')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🟡</div>
+                        <h4>Turmeric Powder</h4>
+                        <p class="price">₹60 - ₹300</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Turmeric Powder')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">⚫</div>
+                        <h4>Black Pepper</h4>
+                        <p class="price">₹120 - ₹600</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Black Pepper')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🟤</div>
+                        <h4>Cumin Seeds</h4>
+                        <p class="price">₹100 - ₹500</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Cumin Seeds')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">⚪</div>
+                        <h4>Coriander Seeds</h4>
+                        <p class="price">₹50 - ₹250</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Coriander Seeds')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🟡</div>
+                        <h4>Mustard Seeds</h4>
+                        <p class="price">₹40 - ₹200</p>
+                        <p class="weight">50g | 100g | 500g | 1kg</p>
+                        <button class="btn-order" onclick="orderNow('Mustard Seeds')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🥘 Masala Blends</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🍛</div>
+                        <h4>Kokani Garam Masala</h4>
+                        <p class="price">₹100 - ₹450</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Kokani Garam Masala')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🐟</div>
+                        <h4>Fish Curry Masala</h4>
+                        <p class="price">₹90 - ₹400</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Fish Curry Masala')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🍗</div>
+                        <h4>Chicken Masala</h4>
+                        <p class="price">₹90 - ₹400</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Chicken Masala')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🥘</div>
+                        <h4>Kala Masala</h4>
+                        <p class="price">₹120 - ₹550</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Kala Masala')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌿</div>
+                        <h4>Godda Masala</h4>
+                        <p class="price">₹110 - ₹500</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Godda Masala')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🥥</div>
+                        <h4>Malvani Masala</h4>
+                        <p class="price">₹100 - ₹480</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Malvani Masala')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🫓 Papad Varieties</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🫓</div>
+                        <h4>Moong Dal Papad</h4>
+                        <p class="price">₹120/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Moong Dal Papad')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">⚫</div>
+                        <h4>Urad Dal Papad</h4>
+                        <p class="price">₹110/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Urad Dal Papad')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌶️</div>
+                        <h4>Chili Papad</h4>
+                        <p class="price">₹130/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Chili Papad')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🧄</div>
+                        <h4>Garlic Papad</h4>
+                        <p class="price">₹140/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Garlic Papad')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🟢</div>
+                        <h4>Palak Papad</h4>
+                        <p class="price">₹135/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Palak Papad')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🥔</div>
+                        <h4>Aloo Papad</h4>
+                        <p class="price">₹125/pack</p>
+                        <p class="weight">250g pack</p>
+                        <button class="btn-order" onclick="orderNow('Aloo Papad')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🥥 Special Kokani Items</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">🥥</div>
+                        <h4>Dry Coconut</h4>
+                        <p class="price">₹80 - ₹350</p>
+                        <p class="weight">100g | 250g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Dry Coconut')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🌿</div>
+                        <h4>Kokum</h4>
+                        <p class="price">₹100 - ₹450</p>
+                        <p class="weight">100g | 250g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Kokum')">Order Now</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">🫚</div>
+                        <h4>Dry Ginger</h4>
+                        <p class="price">₹90 - ₹400</p>
+                        <p class="weight">50g | 100g | 500g</p>
+                        <button class="btn-order" onclick="orderNow('Dry Ginger')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Welcome to <strong>KOKAN SPICES</strong> - your trusted source for authentic Kokani spices and traditional papads. Located in the heart of Alibag, Raigad, we bring you the rich flavors of Maharashtra's coastal cuisine.</p>
+                    <p>Every product is carefully selected and prepared using traditional methods passed down through generations. We believe in purity, quality, and the authentic taste of Kokan.</p>
+                    <ul class="features">
+                        <li>✓ 100% Natural & Pure</li>
+                        <li>✓ No Artificial Colors or Preservatives</li>
+                        <li>✓ Traditional Stone Grinding</li>
+                        <li>✓ Sourced from Local Farmers</li>
+                        <li>✓ Hygienically Packed</li>
+                        <li>✓ Authentic Kokani Taste</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">🏭 KOKAN SPICES<br>Since 2010<br>Alibag, Raigad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <h2>Recipes with Our Spices</h2>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <div class="recipe-image">🐟</div>
+                    <h3>Kolambi Masala</h3>
+                    <p>Authentic Kokani style prawn curry using our special Malvani Masala...</p>
+                    <a href="#" class="read-more">Read Recipe →</a>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-image">🥘</div>
+                    <h3>Kombdi Vade</h3>
+                    <p>Traditional chicken curry with fried bread using Kala Masala...</p>
+                    <a href="#" class="read-more">Read Recipe →</a>
+                </div>
+                <div class="recipe-card">
+                    <div class="recipe-image">🥗</div>
+                    <h3>Solkadhi</h3>
+                    <p>Refreshing kokum drink with coconut milk - perfect for digestion...</p>
+                    <a href="#" class="read-more">Read Recipe →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📞 Order Now</h3>
+                    <p>WhatsApp: <a href="https://wa.me/919699726506">+91 96997 26506</a></p>
+                    <p>Call: +91 96997 26506</p>
+                    <p>Email: vaibhavpatil13058@gmail.com</p>
+                    <h3>📍 Visit Us</h3>
+                    <p>Ranjankhar, Alibag, Raigad 402209</p>
+                    <p>Maharashtra, India</p>
+                    <h3>🚚 Delivery</h3>
+                    <p>Free delivery in Alibag</p>
+                    <p>All India shipping available</p>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <h3>Send Enquiry</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Your Message" rows="4"></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KOKAN SPICES. All rights reserved.</p>
+            <p>Ranjankhar, Alibag, Raigad 402209 | Made with ❤️ in Kokan</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
